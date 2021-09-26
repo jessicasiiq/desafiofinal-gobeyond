@@ -1,13 +1,13 @@
 .titleContainer {
     position: absolute;
     width: 300px;
-    margin: 115px 50px;
-    color: white;
+    margin: -400px 50px;
 }
 
 .title {
     position: absolute;
-    font-size: 35px;
+    font-size: 37px;
+    color: white;
     font-family: Montserrat-Bold, Arial, Helvetica, sans-serif;
 }
 
@@ -18,7 +18,7 @@
 
 .image {
     border-radius: 10px;
-    margin-top: 100px;
+    margin-top: -428px;
     width: 770px;
     height: 475px;
 }

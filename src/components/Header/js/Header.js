@@ -7,8 +7,14 @@ import Navbar from "./Navbar";
 import VejaMais from "./VejaMais";
 
 export default function Header(){
+
     const [photos, setPhotos] = useState(null);
-    useEffect(() => {axios.get("https://jsonplaceholder.typicode.com/photos/?_limit=4").then((result) => {setPhotos(result.data)})}, [])
+
+    useEffect(() => {
+        axios.get("https://jsonplaceholder.typicode.com/photos/?_limit=4").then((result) => {
+            setPhotos(result.data)
+        })}, [])
+
     return(
         <>
             <h1><img src={logo} id="logo"/></h1>
