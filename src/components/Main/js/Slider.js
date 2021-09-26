@@ -1,8 +1,9 @@
 import "../css/Slider.css";
-import {useState} from "react";
+import {useState, useContext} from "react";
+import {ItensContext} from "../../../Context";
 
-const Slider = ({photos}) => {
-    const [selectedImg, setSelectedImg] = useState(photos[0]);
+function Slider() {
+    const {photos, selectedPhotos, setSelectedPhoto} = useContext(ItensContext);
     return (
         <>
             <article className="container">
@@ -10,12 +11,12 @@ const Slider = ({photos}) => {
                 photos.map((thumbnails, index) => (
                     <div className="thumbnailContainer">
                         <img
-                         style={{border: selectedImg === thumbnails.thumbnailUrl ? "4px solid white" : ""}}
+                         style={{border: selectedPhotos === thumbnails ? "4px solid white" : ""}}
                          key= {index}
                          src={thumbnails.thumbnailUrl}
                          className="thumbnail"
                          alt="Thumbnail"
-                         onClick={() => setSelectedImg(thumbnails.thumbnailUrl)}
+                         onClick={() => setSelectedPhoto(thumbnails)}
                         />
                     </div>
                 ))
@@ -23,15 +24,13 @@ const Slider = ({photos}) => {
             </article> 
 
             <article className="titleContainer">
-                    <h2 className="title">{selectedImg.title}</h2>
+                    {selectedPhotos && <h2 className="title">{selectedPhotos.title}</h2>}
             </article>
 
             <article>
-            {
                 <div className="imageContainer">
-                    <img src={selectedImg.url} className="image"/>
+                    {selectedPhotos && <img src={selectedPhotos.url} className="image"/>}
                 </div>
-            }
             </article>
 
         </>

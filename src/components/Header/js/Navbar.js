@@ -1,23 +1,49 @@
+import React, {useState, useEffect} from "react";
 import "../css/Navbar.css";
 
 export default function Navbar() {
+    const [fechaMenu, setFechaMenu] = useState(false);
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    const fechaNav = () => {
+        setFechaMenu(!fechaMenu);
+    }
+
+    useEffect(() => {
+        const changeWidth = () => {
+            setScreenWidth(window.innerWidth);
+        }
+        window.addEventListener("resize", changeWidth);
+        return () => {
+           window.removeEventListener("resize", changeWidth);
+        }
+    }, []);
+
     return (
         <>
             <nav className="navbarMenu">
-                <ul className="itemMenu">
+                {(fechaMenu || screenWidth > 500) && (
+                    <ul className="itemMenu">
                     <li>
-                        <a href="/" className="itemMenu">A Corebiz</a>
+                        <a href="https://www.corebiz.ag/pt/about/" className="itemMenu" target="_blank">A Corebiz</a>
                     </li>
                     <li>
-                        <a href="/" className="itemMenu">Serviços</a>
+                        <a href="https://www.corebiz.ag/pt/#framework-title" className="itemMenu" target="_blank">Serviços</a>
                     </li>
                     <li>
-                        <a href="/" className="itemMenu">Cases</a>
+                        <a href="https://www.corebiz.ag/pt/cases/" className="itemMenu" target="_blank">Cases</a>
                     </li>
                     <li>
-                        <a href="/" className="itemMenu">Contato</a>
+                        <a href="https://www.corebiz.ag/pt/contato/" className="itemMenu" target="_blank">Contato</a>
                     </li>
                 </ul>
+                )}
+                <button className="btn" onClick={fechaNav}>
+                    <div className="mobileMenu">
+                        <div id="line1"></div>
+                        <div id="line1"></div>
+                        <div id="line1"></div>
+                    </div>
+                </button>
             </nav>
         </>
     )

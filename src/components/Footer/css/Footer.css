@@ -1,0 +1,147 @@
+.footer {
+    height: 230px;
+    background-color: #f4f4f4;
+    margin-top: 115px;
+}
+
+.column {
+    flex-basis: 16.7%;
+    width: 215px;
+    height: 230px;
+    grid-template-columns: repeat(6, 1fr);
+    display: inline-block;
+}
+
+#columnv2 {
+    background-color: #fff;
+}
+
+.container-column {
+    padding: 50px;
+    position: absolute;
+    max-width: 180px;
+}
+
+.logoBlack {
+    margin-top: -200px;
+}
+
+.description {
+    font-family: Montserrat-SemiBold, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin-top: 7px;
+}
+
+.socialMedia {
+    margin-top: 30px;
+    width: 100%;
+    margin-left: -8px;
+}
+
+.icon {
+    margin-left: 10px;
+}
+
+.menuFooter {
+    margin-top: -10px;
+    margin-left: -15px;
+}
+
+.footerItem {
+    display: flex;
+    border-bottom: 1px solid #000;
+    padding: 7px 0;
+    width: 130px;
+    text-transform: lowercase;
+    font-family: Montserrat-Medium, Arial, Helvetica, sans-serif;
+    transition: ease-in 0.7s;
+}
+
+.footerItem:hover {
+    color: #7f7f7f;
+}
+
+.footer h2{
+    font-family: Montserrat-Bold, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.footer p {
+    margin-top: 9px;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width : 500px) {
+    .footer {
+        height: 230px;
+        background-color: #f4f4f4;
+        margin-top: 115px;
+    }
+    
+    .column {
+        flex-basis: 16.7%;
+        width: 215px;
+        height: 230px;
+        grid-template-columns: repeat(6, 1fr);
+        display: inline-block;
+    }
+    
+    #columnv2 {
+        background-color: #fff;
+    }
+    
+    .container-column {
+        padding: 50px;
+        position: absolute;
+        max-width: 180px;
+    }
+    
+    .logoBlack {
+        margin-top: -200px;
+    }
+    
+    .description {
+        font-family: Montserrat-SemiBold, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        margin-top: 7px;
+    }
+    
+    .socialMedia {
+        margin-top: 30px;
+        width: 100%;
+        margin-left: -8px;
+    }
+    
+    .icon {
+        margin-left: 10px;
+    }
+    
+    .menuFooter {
+        margin-top: -10px;
+        margin-left: -15px;
+    }
+    
+    .footerItem {
+        display: flex;
+        border-bottom: 1px solid #000;
+        padding: 7px 0;
+        width: 130px;
+        text-transform: lowercase;
+        font-family: Montserrat-Medium, Arial, Helvetica, sans-serif;
+        transition: ease-in 0.7s;
+    }
+    
+    .footerItem:hover {
+        color: #7f7f7f;
+    }
+    
+    .footer h2{
+        font-family: Montserrat-Bold, Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+    
+    .footer p {
+        margin-top: 9px;
+        line-height: 1.5;
+    } 
+}

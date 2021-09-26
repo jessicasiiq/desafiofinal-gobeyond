@@ -1,7 +1,15 @@
-#logo {
+#logoCorebiz {
     top: 0px;
     left: 55px;
     width: 170px;
     height: 103px;
     position: absolute;
+}
+
+@media only screen and (max-width : 500px) {
+    #logoCorebiz {
+        width: 100px;
+        left: 30px;
+        top: -10px;
+    }
 }

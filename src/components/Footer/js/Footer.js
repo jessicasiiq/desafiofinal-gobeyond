@@ -1,8 +1,8 @@
-import "./Footer.css";
-import logoBlack from "../../assets/icons/logoBlackCorebizIcon.svg";
-import facebook from "../../assets/icons/facebookIcon.svg";
-import instagram from "../../assets/icons/instagramIcon.svg";
-import linkedin from "../../assets/icons/linkedinIcon.svg";
+import "../css/Footer.css";
+import logoBlack from "../../../assets/icons/logoBlackCorebizIcon.svg";
+import facebook from "../../../assets/icons/facebookIcon.svg";
+import instagram from "../../../assets/icons/instagramIcon.svg";
+import linkedin from "../../../assets/icons/linkedinIcon.svg";
 
 function Footer() {
     return (
@@ -12,19 +12,19 @@ function Footer() {
                     <img src={logoBlack} id="logoBlack"/>
                     <p className="description">direitos reservados, corebiz 2021</p>
                     <div className="socialMedia">
-                        <a href="https://pt-br.facebook.com/corebiz.ag/"><img src={facebook} className="icon"/></a>
-                        <a href="https://www.instagram.com/corebizag/"><img src={instagram} className="icon"/></a>
-                        <a href="https://www.linkedin.com/company/corebiz-brasil/"><img src={linkedin} className="icon"/></a>
+                        <a href="https://pt-br.facebook.com/corebiz.ag/"  target="_blank"><img src={facebook} className="icon"/></a>
+                        <a href="https://www.instagram.com/corebizag/" target="_blank"><img src={instagram} className="icon"/></a>
+                        <a href="https://www.linkedin.com/company/corebiz-brasil/" target="_blank"><img src={linkedin} className="icon"/></a>
                     </div>
                 </div>
             </section>
             <section className="column" id="columnv2">
                 <div className="container-column">
                     <div className="menuFooter">
-                        <a href="" className="footerItem">Corebiz</a>
-                        <a href="" className="footerItem">Serviços</a>
-                        <a href="" className="footerItem">Cases</a>
-                        <a href="" className="footerItem">Contato</a>
+                        <a href="https://www.corebiz.ag/pt/about/" className="footerItem" target="_blank">a Corebiz</a>
+                        <a href="https://www.corebiz.ag/pt/#framework-title" className="footerItem" target="_blank">Serviços</a>
+                        <a href="https://www.corebiz.ag/pt/cases/" className="footerItem" target="_blank">Cases</a>
+                        <a href="https://www.corebiz.ag/pt/contato/" className="footerItem" target="_blank">Contato</a>
                     </div>
                 </div>
             </section>

@@ -1,6 +1,6 @@
 .navbarMenu {
     width: 426.8px;
-    margin: -488px 830px;
+    margin: 7.5vh 830px;
     position: absolute;
 }
 
@@ -34,13 +34,13 @@
  .itemMenu li li a, #itemMenu li li a:link, #itemMenu li li a:visited {
     width: 150px;
     font-size: 13px;
-    padding: 8px 15px;
+    padding: 0px 15px;
     border-bottom: 1px solid #fff;
     background-color: #f1f1f3;
 }
   
 .itemMenu li li a:hover, #itemMenu li li a:active {
-    padding: 8px 10px;
+    padding: 0px 10px;
     background-color: #ededed;
 }
   
@@ -58,4 +58,67 @@
   
 .itemMenu li:hover ul, .itemMenu li li:hover ul, .itemMenu li li li:hover ul, .itemMenu li.sfhover ul, .itemMenu li li.sfhover ul, .itemMenu li li li.sfhover ul {
     left: auto;
+}
+
+@media only screen and (max-width : 500px) {
+    .body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: Montserrat-Medium, Helvetica, Arial, sans-serif;
+    }
+
+    .navbarMenu {
+        margin-top: 70px;
+        margin-left: -50px;
+        position: absolute;
+    }
+
+    .itemMenu {
+        color: #fff;
+        text-decoration: none;
+        transition: 0.3s;
+        width: 50vw;
+        height: auto;
+        background: black;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        z-index: 2;
+    }
+
+    .itemMenu li {
+        letter-spacing: 3px;
+        margin-left: 32px;
+    }
+
+    .itemMenu li a:hover {
+        border: none;
+    }
+
+    .btn {
+        background-color: transparent;
+        border: none;
+        margin-left: 240px;
+        margin-top: -55px;
+        position: absolute;
+        z-index: 3;
+    }
+    
+    .mobileMenu {
+        cursor: pointer;
+    }
+
+    .mobileMenu div {
+        width: 30px;
+        height: 2px;
+        background: #fff;
+        margin: 8px;
+        display: block;
+    }
 }
