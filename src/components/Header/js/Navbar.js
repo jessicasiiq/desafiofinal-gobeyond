@@ -24,16 +24,16 @@ export default function Navbar() {
                 {(fechaMenu || screenWidth > 500) && (
                     <ul className="itemMenu">
                     <li>
-                        <a href="https://www.corebiz.ag/pt/about/" className="itemMenu" target="_blank" title="A Corebiz">A Corebiz</a>
+                        <a href="https://www.corebiz.ag/pt/about/" className="itemMenu" target="_blank" rel="noopener" title="A Corebiz">A Corebiz</a>
                     </li>
                     <li>
-                        <a href="https://www.corebiz.ag/pt/#framework-title" className="itemMenu" target="_blank" title="Serviços">Serviços</a>
+                        <a href="https://www.corebiz.ag/pt/#framework-title" className="itemMenu" target="_blank" rel="noopener" title="Serviços">Serviços</a>
                     </li>
                     <li>
-                        <a href="https://www.corebiz.ag/pt/cases/" className="itemMenu" target="_blank" title="Cases">Cases</a>
+                        <a href="https://www.corebiz.ag/pt/cases/" className="itemMenu" target="_blank" rel="noopener" title="Cases">Cases</a>
                     </li>
                     <li>
-                        <a href="https://www.corebiz.ag/pt/contato/" className="itemMenu" target="_blank" title="Contato">Contato</a>
+                        <a href="https://www.corebiz.ag/pt/contato/" className="itemMenu" target="_blank" rel="noopener" title="Contato">Contato</a>
                     </li>
                 </ul>
                 )}

@@ -12,19 +12,19 @@ function Footer() {
                     <img src={logoBlack} role="img" id="logoBlack" alt="Logo preto da Corebiz"/>
                     <p role="comment" className="description">direitos reservados, corebiz 2021</p>
                     <div role="contentinfo" className="socialMedia">
-                        <a href="https://pt-br.facebook.com/corebiz.ag/"  target="_blank" title="Rede social • Facebook"><img src={facebook} className="icon" alt="Ícone Facebook"/></a>
-                        <a href="https://www.instagram.com/corebizag/" target="_blank"  title="Rede social • Instagram"><img src={instagram} className="icon" alt="Ícone Instagram"/></a>
-                        <a href="https://www.linkedin.com/company/corebiz-brasil/" target="_blank"  title="Rede social • Linkedin"><img src={linkedin} className="icon" alt="Ícone Linkedin"/></a>
+                        <a href="https://pt-br.facebook.com/corebiz.ag/"  target="_blank" rel="noopener" title="Rede social • Facebook"><img src={facebook} className="icon" alt="Ícone Facebook"/></a>
+                        <a href="https://www.instagram.com/corebizag/" target="_blank" rel="noopener" title="Rede social • Instagram"><img src={instagram} className="icon" alt="Ícone Instagram"/></a>
+                        <a href="https://www.linkedin.com/company/corebiz-brasil/" target="_blank" rel="noopener" title="Rede social • Linkedin"><img src={linkedin} className="icon" alt="Ícone Linkedin"/></a>
                     </div>
                 </div>
             </section>
             <section role="contentinfo" className="column" id="columnv2">
                 <div role="contentinfo" className="container-column">
                     <div role="navigation" className="menuFooter">
-                        <a href="https://www.corebiz.ag/pt/about/" className="footerItem" target="_blank" title="A Corebiz">a Corebiz</a>
-                        <a href="https://www.corebiz.ag/pt/#framework-title" className="footerItem" target="_blank" title="Serviços">Serviços</a>
-                        <a href="https://www.corebiz.ag/pt/cases/" className="footerItem" target="_blank" title="Cases">Cases</a>
-                        <a href="https://www.corebiz.ag/pt/contato/" className="footerItem" target="_blank"  title="Contato">Contato</a>
+                        <a href="https://www.corebiz.ag/pt/about/" className="footerItem" target="_blank" rel="noopener" title="A Corebiz">a Corebiz</a>
+                        <a href="https://www.corebiz.ag/pt/#framework-title" className="footerItem" target="_blank"  rel="noopener" title="Serviços">Serviços</a>
+                        <a href="https://www.corebiz.ag/pt/cases/" className="footerItem" target="_blank"  rel="noopener" title="Cases">Cases</a>
+                        <a href="https://www.corebiz.ag/pt/contato/" className="footerItem" target="_blank"  rel="noopener" title="Contato">Contato</a>
                     </div>
                 </div>
             </section>
