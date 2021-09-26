@@ -1,0 +1,124 @@
+.titleContainer {
+    position: absolute;
+    width: 300px;
+    margin: 115px 50px;
+}
+
+.title {
+    position: absolute;
+    font-size: 35px;
+    font-family: Montserrat-Bold, Arial, Helvetica, sans-serif;
+}
+
+.imageContainer {
+    position: absolute;
+    margin-left: 495px;
+}
+
+.image {
+    border-radius: 10px;
+    margin-top: 100px;
+    width: 770px;
+    height: 475px;
+}
+
+.navbarMenu {
+    width: 426.8px;
+    margin: 40px 830px;
+    position: absolute;
+}
+
+.itemMenu li {
+    list-style: none;
+}
+
+.itemMenu li a {
+    height: 53px;
+}
+
+.itemMenu li a:hover {
+    border-bottom: 7px solid #fff;
+}
+
+.itemMenu li a, .itemMenu li a:link, .itemMenu li a:visited {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-family: Montserrat-Medium, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 0px 15px;
+    text-transform: lowercase;
+    transition: ease-in 0.7s;
+}
+  
+.itemMenu li a:hover, #itemMenu li a:active {
+    margin: 0;
+}
+  
+ .itemMenu li li a, #itemMenu li li a:link, #itemMenu li li a:visited {
+    width: 150px;
+    font-size: 13px;
+    padding: 8px 15px;
+    border-bottom: 1px solid #fff;
+    background-color: #f1f1f3;
+}
+  
+.itemMenu li li a:hover, #itemMenu li li a:active {
+    padding: 8px 10px;
+    background-color: #ededed;
+}
+  
+.itemMenu li {
+    float: left;
+    padding: 0;
+}
+  
+.itemMenu li ul {
+    position: absolute;
+    left: -999em;
+    width: 170px;
+    padding: 0;
+}
+  
+.itemMenu li:hover ul, .itemMenu li li:hover ul, .itemMenu li li li:hover ul, .itemMenu li.sfhover ul, .itemMenu li li.sfhover ul, .itemMenu li li li.sfhover ul {
+    left: auto;
+}
+
+.menuVejaMais {
+    background-color: #f4f4f4;
+    padding: 15px 50px;
+    border-radius: 25px;
+    text-transform: lowercase;
+    font-family: Montserrat-Medium, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin: 370px 20px;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+}
+
+.menuVejaMais:hover {
+    background-color:#707070;
+}
+
+.arrowVejaMais {
+    position: absolute;
+    margin-top: 1.3px;
+    margin-left: 10px;
+    height: 15px;
+}
+
+.thumbnailContainer {
+    margin-top: 470px;
+    grid-template-columns: repeat(4, 1fr);
+    display: inline-block;
+}
+
+.thumbnail {
+    height: 54px;
+    width: 85px;
+    margin-left: 17px;
+}
+
+.container {
+    margin-left: 25px;
+}
