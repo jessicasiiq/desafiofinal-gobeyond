@@ -6,7 +6,7 @@ function Slider() {
     const {photos, selectedPhotos, setSelectedPhoto} = useContext(ItensContext);
     return (
         <>
-            <article className="container">
+            <article className="container" role="contentinfo">
             {
                 photos.map((thumbnails, index) => (
                     <div className="thumbnailContainer">
@@ -15,7 +15,7 @@ function Slider() {
                          key= {index}
                          src={thumbnails.thumbnailUrl}
                          className="thumbnail"
-                         alt="Thumbnail"
+                         alt="Thumbnail do slider"
                          onClick={() => setSelectedPhoto(thumbnails)}
                         />
                     </div>
@@ -23,13 +23,13 @@ function Slider() {
             }
             </article> 
 
-            <article className="titleContainer">
+            <article className="titleContainer" role="contentinfo">
                     {selectedPhotos && <h2 className="title">{selectedPhotos.title}</h2>}
             </article>
 
             <article>
-                <div className="imageContainer">
-                    {selectedPhotos && <img src={selectedPhotos.url} className="image"/>}
+                <div className="imageContainer" role="contentinfo">
+                    {selectedPhotos && <img src={selectedPhotos.url} className="image" alt="Imagem grande do slider"/>}
                 </div>
             </article>
 

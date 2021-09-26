@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 export default function Header(){
     return(
         <>
-            <h1><img src={logo} id="logoCorebiz"/></h1>
+            <h1><img src={logo} id="logoCorebiz" alt="Logo branco Corebiz"/></h1>
             <Navbar/>
         </>
     )
