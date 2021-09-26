@@ -1,5 +1,4 @@
 .footer {
-    height: 230px;
     background-color: #f4f4f4;
     margin-top: 115px;
 }
@@ -73,31 +72,34 @@
 
 @media only screen and (max-width : 500px) {
     .footer {
-        height: 230px;
+        height: 900px !important;
         background-color: #f4f4f4;
-        margin-top: 115px;
+        margin-top: 40px;
     }
-    
+
     .column {
-        flex-basis: 16.7%;
-        width: 215px;
-        height: 230px;
-        grid-template-columns: repeat(6, 1fr);
-        display: inline-block;
+        width: 100%;
+        height: 150px;
+        display: block;
     }
-    
+
+    .container-column {
+        padding: 0px;
+        position: absolute;
+        width: 100vw;
+        height: 100px;
+        align-items: center;
+        margin-left: 80px;
+        margin-top: 35px;
+    }
+
     #columnv2 {
         background-color: #fff;
-    }
-    
-    .container-column {
-        padding: 50px;
-        position: absolute;
-        max-width: 180px;
+        height: 170px !important;
     }
     
     .logoBlack {
-        margin-top: -200px;
+        margin-top: 10px;
     }
     
     .description {
@@ -107,9 +109,9 @@
     }
     
     .socialMedia {
-        margin-top: 30px;
+        margin-top: 20px;
         width: 100%;
-        margin-left: -8px;
+        margin-left: 45px;
     }
     
     .icon {
@@ -117,18 +119,19 @@
     }
     
     .menuFooter {
-        margin-top: -10px;
-        margin-left: -15px;
+        margin-top: -50px;
+        margin-left: -35px;
     }
     
     .footerItem {
         display: flex;
         border-bottom: 1px solid #000;
         padding: 7px 0;
-        width: 130px;
+        width: 230px;
         text-transform: lowercase;
         font-family: Montserrat-Medium, Arial, Helvetica, sans-serif;
         transition: ease-in 0.7s;
+        justify-content: center;
     }
     
     .footerItem:hover {

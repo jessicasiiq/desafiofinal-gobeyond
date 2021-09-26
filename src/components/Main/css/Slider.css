@@ -63,8 +63,6 @@
     
     .thumbnailContainer {
         margin-top: 500px;
-        grid-template-columns: repeat(4, 1fr);
-        display: inline-block;
         margin-left: -5px;
     }
     
@@ -72,9 +70,5 @@
         height: 48px;
         width: 65px;
         margin-left: 5px;
-    }
-    
-    .container {
-        margin-left: 25px;
     }
 }
