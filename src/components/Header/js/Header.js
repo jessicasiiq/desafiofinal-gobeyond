@@ -1,8 +1,10 @@
-import "./Header.css";
+import "../css/Header.css";
 import {useState, useEffect} from "react";
 import axios from "axios";
-import ImageList from "./HeaderComponents";
-import logo from "../../assets/icons/logoCorebizIcon.svg"
+import logo from "../../../assets/icons/logoCorebizIcon.svg"
+import Slider from "./Slider";
+import Navbar from "./Navbar";
+import VejaMais from "./VejaMais";
 
 export default function Header(){
     const [photos, setPhotos] = useState(null);
@@ -10,7 +12,9 @@ export default function Header(){
     return(
         <>
             <h1><img src={logo} id="logo"/></h1>
-            <div id="imageList">{photos ? <ImageList photos={photos}/> : <div> Carregando...</div>}</div>
+            <div >{photos ? <Slider photos={photos}/> : <div> Carregando...</div>}</div>
+            <Navbar/>
+            <VejaMais/>
         </>
     )
 }

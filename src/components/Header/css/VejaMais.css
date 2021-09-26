@@ -1,0 +1,22 @@
+.menuVejaMais {
+    background-color: #f4f4f4;
+    padding: 15px 50px;
+    border-radius: 25px;
+    text-transform: lowercase;
+    font-family: Montserrat-Medium, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin: -150px 20px;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+}
+
+.menuVejaMais:hover {
+    background-color:#707070;
+}
+
+.arrowVejaMais {
+    position: absolute;
+    margin-top: 1.3px;
+    margin-left: 10px;
+    height: 15px;
+}
