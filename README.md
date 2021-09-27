@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# Desafio Final ***Go Beyond 3 (Corebiz)*** **•** ***Front-end →*** Criação de uma página *web* da ***Corebiz*** em ***React*** 🎨🔥✨
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🧡 Desenvolvimento da quarta atividade *front-end web* proposta para o intensivo ***Go Beyond 3*** da ***Corebiz*** ➡️ construir uma página *web* da ***Corebiz*** utilizando ***React***.
 
-## Available Scripts
+## ⭐ **Projeto base:**
 
-In the project directory, you can run:
+Para o desenvolvimento do projeto foi disponibilizado um *design* de inspiração. Acesse o material por aqui:
 
-### `yarn start`
+- [Xd Adobe](https://xd.adobe.com/view/e100320d-9539-4cd9-9146-e27f75204e69-b453/) 
+- [Vercel](https://go-beyond-2021-final-challenge.vercel.app)
+- [Instruções](https://whimsical.com/go-beyond-TcK8nmurXeQmuiFyvwy3Kd)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🌠 **Construção do projeto:**
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Como nos foi solicitado um *layout* mais fiel possível ao original, as cores, efeitos, posicionamento e fontes foram totalmente baseadas no protótipo.
 
-### `yarn test`
+### ◽ Estruturação do projeto:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+PRINT1
 
-### `yarn build`
+#### 🌳 Pasta *src* aberta:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+PRINT2
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### ◾ Paleta de cores:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+PRINT3
 
-### `yarn eject`
+### ◽ ***API*** consumida:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Na construção do desafio optei por criar minha própria *API*, onde foram puxados os elementos do *slider*: imagens principais, *thumbnails* e títulos. Você pode encontrar a *API* aqui:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [API própria utilizada no projeto](https://github.com/jessicasiiq/API-desafiofinal-gobeyond) 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Para a renderização dos elementos foi utilizado apenas um ***.map*** nas *thumbnails*, dependendo da miniatura selecionada seria renderizado o título e a imagem principal correspondendo ao objeto dela, essa leitura de escolha foi efetuada por meio do ***useContext***. Com o carregamento inicial da página o *array* inicia no *index* [0].
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### ◾ Comparação *desktop*:
 
-## Learn More
+    🔹 *Header* e *main*:
+        
+        PRINT4
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    🔹 *Footer*:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+        PRINT5
 
-### Code Splitting
+### ◽ Comparação *mobile*:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    🔸 *Header* e *main*:
+        
+        PRINT6
 
-### Analyzing the Bundle Size
+    🔸 *Footer*:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+        PRINT7
 
-### Making a Progressive Web App
+![cards](https://user-images.githubusercontent.com/72312529/133951310-a342f521-40a2-429b-8f60-0692e299ffe1.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## 💌 Visão geral do projeto:
+    🔹 *Desktop*:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+        GIF1
+    
+    🔸 *Mobile*:
 
-### Deployment
+        GIF2
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+*obs.:* os .*gifs* estão fora de proporção, considerá-los apenas para ter uma ideia dos efeitos.´
 
-### `yarn build` fails to minify
+## 💥 Performace do *site*:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Segundo o [*PageSpeed Insights*](https://developers.google.com/speed/pagespeed/insights/) minhas pontuações foram:
+    🔹 *Desktop*:
+
+        PRINT8
+    
+    🔸 *Mobile*:
+
+        PRINT9
+
+## 🚜 Possíveis melhorias futuras:
+
+Como pôde ser visto, minha performace *mobile* ficou bem precária, talvez fosse melhor rever a responsividade.
+
+Grata! 😋
